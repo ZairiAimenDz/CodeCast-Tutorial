@@ -49,7 +49,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Pages\" />
+	  <AndroidResource Remove="Pages\**" />
+	  <Compile Remove="Pages\**" />
+	  <EmbeddedResource Remove="Pages\**" />
+	  <MauiCss Remove="Pages\**" />
+	  <MauiXaml Remove="Pages\**" />
+	  <None Remove="Pages\**" />
 	</ItemGroup>
 
 </Project>
