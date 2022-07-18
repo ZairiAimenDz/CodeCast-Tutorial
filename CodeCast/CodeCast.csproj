@@ -49,12 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <AndroidResource Remove="Pages\**" />
-	  <Compile Remove="Pages\**" />
-	  <EmbeddedResource Remove="Pages\**" />
-	  <MauiCss Remove="Pages\**" />
-	  <MauiXaml Remove="Pages\**" />
-	  <None Remove="Pages\**" />
+	  <MauiXaml Update="Pages\InterfaceXAML.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
