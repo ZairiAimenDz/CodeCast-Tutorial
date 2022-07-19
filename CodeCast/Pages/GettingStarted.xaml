@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CodeCast.Pages.GettingStarted"
+             NavigationPage.HasNavigationBar="False"
+             Title="Getting Started">
+    <Grid Padding="0">
+        <Image Source="bg.jpg" VerticalOptions="Fill" Aspect="AspectFill"></Image>
+        <Frame VerticalOptions="End" Padding="34" Margin="24,34" CornerRadius="24">
+            <VerticalStackLayout Spacing="8">
+                <Label FontAttributes="Bold" FontSize="20" Text="Manage Your Money &#10; Manage Your Life" HorizontalTextAlignment="Center"/>
+                <Label TextColor="Gray" FontAttributes="Bold" Text="The More Money Works For You, &#10; The Less You Have Work" HorizontalTextAlignment="Center"/>
+                <Button Padding="26,14" Clicked="Button_Clicked" CornerRadius="40" Margin="0,8,0,0" Text="Start >" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

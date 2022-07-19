@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CodeCast.Pages.Login"
+             Title="Login">
+    <VerticalStackLayout Padding="24" Spacing="8">
+        <Label Text="Login" FontSize="24" FontAttributes="Bold"/>
+        <Label BindingContext="{x:Reference username}" Text="{Binding Text,StringFormat='Welcome Back, {0}!',Mode=OneWay}" TextColor="Gray"/>
+        <Frame Padding="10,2">
+            <Entry x:Name="username"  Placeholder="Username"/>
+        </Frame>
+        <Frame Padding="10,2">
+            <Entry Placeholder="Password" IsPassword="True"/>
+        </Frame>
+        <Label FontSize="16" TextColor="Gray" FontAttributes="Bold" Text="recover password"/>
+        <Button CornerRadius="40" Padding="24,12" Text="Login"/>
+        <HorizontalStackLayout Spacing="12" Margin="20" HorizontalOptions="Center">
+            <Line BackgroundColor="Black" WidthRequest="100" HeightRequest="2"/>
+            <Label Text="Or"/>
+            <Line BackgroundColor="Black" WidthRequest="100" HeightRequest="2"/>
+        </HorizontalStackLayout>
+        <!-- Button With Image -->
+
+        <Button Text="Click Me" ContentLayout="Left, 0" ImageSource="room_image.png"></Button>
+        
+        <Label>
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Not A Member ? "/>
+                    <Span Text="Register Now" TextDecorations="Underline" FontAttributes="Bold" TextColor="MediumPurple"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>
